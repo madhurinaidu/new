@@ -7,7 +7,7 @@ WORKDIR /usr/local/tomcat
 RUN rm -rf webapps/*
 
 # Copy the WAR file to Tomcat's webapps directory
-COPY target/yourapp.war /usr/local/tomcat/webapps/ROOT.war
+COPY target/gitdemo-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapps/gitdemo
 
 # Print out the contents of the webapps directory to confirm WAR deployment
 RUN ls -la /usr/local/tomcat/webapps/
