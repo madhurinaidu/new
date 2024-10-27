@@ -10,8 +10,6 @@ RUN rm -rf webapps/*
 COPY target/gitdemo-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapps/gitdemo
 
 # Print out the contents of the webapps directory to confirm WAR deployment
-RUN ls -la /usr/local/tomcat/webapps/
-
 # Expose port 8080
 EXPOSE 8080
 
