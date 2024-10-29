@@ -11,7 +11,7 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 
-FROM tomcat:10.1-jdk17-corretto
+FROM tomcat:10.1-jdk17
 
 # Set the working directory inside the container
 WORKDIR /usr/local/tomcat
